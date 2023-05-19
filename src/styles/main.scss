@@ -30,10 +30,21 @@ header {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0px;
+  // align-items: center;
+  // justify-content: center;
   justify-content: space-between;
   // background-color: red;
+}
+
+.logo{
+  margin-top: 10px;
+}
+
+
+a{
+  min-height: 45px;
+  display: inline-block;
 }
 
 .logo img {
@@ -169,8 +180,11 @@ footer {
 }
 
 .skip-link {
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
   position: absolute;
-  top: -40px;
+  top: -70px;
   left: 0;
   padding: 8px;
   background-color: #bf1722;
@@ -222,6 +236,18 @@ label{
 }
 
 input{
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #747171;
+  min-height: 50px;
+
+}
+// can you give me example of select style
+select{
+  min-height: 50px;
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -229,11 +255,32 @@ input{
   border: 1px solid #747171;
 }
 
-// can you give me example of select style
-select{
-  width: 100%;
+
+button#menu{
+  border: none;
+  border-radius: 10px;
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
-  border: 1px solid #747171;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 100px;
+  min-height: 50px;
+  background-color: white;
+  padding: 10px;
+}
+
+
+li a{
+  margin: 15px;
+  // padding: 20px;
+
+  min-height: 50px ;
+  // background-color: red;
+}
+
+
+.menu li{
+  // padding: 10px;
 }
